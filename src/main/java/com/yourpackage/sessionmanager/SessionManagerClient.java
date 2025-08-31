@@ -24,7 +24,7 @@ public class SessionManagerClient implements ClientModInitializer {
     private static KeyBinding saveSessionKey;
     private static KeyBinding loadSessionKey;
     
-    private static final Path SESSION_FILE = Paths.get("config", "sessionmanager", "session.properties");
+    public static final Path SESSION_FILE = Paths.get("config", "sessionmanager", "session.properties");
     
     @Override
     public void onInitializeClient() {
@@ -54,7 +54,7 @@ public class SessionManagerClient implements ClientModInitializer {
         
         // Register client tick event for key handling
         ClientLifecycleEvents.CLIENT_STARTED.register(client -> {
-            LOGGER.info("Session Manager started - Press F7 to save session, F8 to load session");
+            LOGGER.info("Session Manager started - Press F7 to save, F8 to load, or use Multiplayer menu");
         });
         
         // Auto-load session on startup if available
