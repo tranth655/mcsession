@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "sessionmanager",
+  "version": "1.0.0",
+  "name": "Session Manager",
+  "description": "Manages Minecraft sessions for instant login",
+  "authors": [
+    "YourName"
+  ],
+  "contact": {
+    "homepage": "https://github.com/yourusername/sessionmanager",
+    "sources": "https://github.com/yourusername/sessionmanager"
+  },
+  "license": "MIT",
+  "icon": "assets/sessionmanager/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.yourpackage.sessionmanager.SessionManagerClient"
+    ]
+  },
+  "mixins": [
+    "sessionmanager.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric-api": "*",
+    "minecraft": "1.21.5"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
