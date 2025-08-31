@@ -1,0 +1,5 @@
+{
+  "key.sessionmanager.save_session": "Save Session",
+  "key.sessionmanager.load_session": "Load Session",
+  "category.sessionmanager.keys": "Session Manager"
+}
