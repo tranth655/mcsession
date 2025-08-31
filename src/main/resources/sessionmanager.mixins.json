@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.yourpackage.sessionmanager.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "refmap": "sessionmanager.refmap.json",
+  "client": [
+    "ClientTickMixin",
+    "MultiplayerScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
